@@ -25,7 +25,7 @@ resource "proxmox_vm_qemu" "fog" {
   scsihw            = "virtio-scsi-pci"
   ipconfig0 = "ip=dhcp"
   disk {
-    type            = "scsi"
+    type            = "virtio"
     storage = "archive1"
     size = "250G"
   }
